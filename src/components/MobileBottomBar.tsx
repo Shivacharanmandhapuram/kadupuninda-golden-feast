@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from 'react-router-dom';
 import { MapPin, Phone, Menu as MenuIcon } from 'lucide-react';
 
@@ -7,9 +6,9 @@ const MobileBottomBar = () => {
 
   const bottomNavItems = [
     { name: 'Menu', path: '/menu', icon: MenuIcon },
+    { name: 'Subscribe', path: '/subscription', icon: '🍽️' },
     { name: 'Location', path: '/contact', icon: MapPin },
     { name: 'Call', path: 'tel:+919876543210', icon: Phone, external: true },
-    { name: 'Franchise', path: '/franchise', icon: '🏪' },
   ];
 
   return (

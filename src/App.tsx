@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +10,7 @@ import Gallery from "./pages/Gallery";
 import Franchise from "./pages/Franchise";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Subscription from "./pages/Subscription";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import MobileBottomBar from "./components/MobileBottomBar";
@@ -27,6 +27,7 @@ const AppContent = () => (
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/franchise" element={<Franchise />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/subscription" element={<Subscription />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
