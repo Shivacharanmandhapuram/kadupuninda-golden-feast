@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 27 59 36; /* forest-green */
+    --background: 27 59 36; /* green */
     --foreground: 212 175 55; /* gold */
 
-    --card: 15 36 25; /* deep-green */
+    --card: 15 36 25; /* dark-green */
     --card-foreground: 212 175 55; /* gold */
 
-    --popover: 15 36 25;
-    --popover-foreground: 212 175 55;
+    --popover: 15 36 25; /* dark-green */
+    --popover-foreground: 212 175 55; /* gold */
 
     --primary: 212 175 55; /* gold */
-    --primary-foreground: 27 59 36; /* forest-green */
+    --primary-foreground: 0 0 0; /* black */
 
-    --secondary: 244 228 188; /* warm-gold */
-    --secondary-foreground: 27 59 36;
+    --secondary: 15 36 25; /* dark-green */
+    --secondary-foreground: 212 175 55; /* gold */
 
-    --muted: 15 36 25;
-    --muted-foreground: 244 228 188;
+    --muted: 15 36 25; /* dark-green */
+    --muted-foreground: 212 175 55; /* gold */
 
-    --accent: 212 175 55;
-    --accent-foreground: 27 59 36;
+    --accent: 212 175 55; /* gold */
+    --accent-foreground: 0 0 0; /* black */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 0 0; /* black */
+    --destructive-foreground: 212 175 55; /* gold */
 
-    --border: 212 175 55;
-    --input: 15 36 25;
-    --ring: 212 175 55;
+    --border: 212 175 55; /* gold */
+    --input: 15 36 25; /* dark-green */
+    --ring: 212 175 55; /* gold */
 
     --radius: 0.5rem;
   }
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-forest-green text-gold font-dm-sans;
+    @apply bg-green text-gold font-dm-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
