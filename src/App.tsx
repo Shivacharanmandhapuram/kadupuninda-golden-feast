@@ -17,26 +17,30 @@ import MobileBottomBar from "./components/MobileBottomBar";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => (
+  <div className="min-h-screen bg-forest-green">
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/franchise" element={<Franchise />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    <Footer />
+    <MobileBottomBar />
+  </div>
+);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen bg-forest-green">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/franchise" element={<Franchise />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-          <MobileBottomBar />
-        </div>
+        <AppContent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
