@@ -57,11 +57,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Simplified brand colors - only gold, green, and black
-				'green': '#1B3B24',
-				'dark-green': '#0F2419',
+				// Custom brand colors
+				'forest-green': '#1B3B24',
+				'deep-green': '#0F2419',
 				'gold': '#D4AF37',
-				'black': '#000000',
+				'warm-gold': '#F4E4BC',
+				'cream': '#FDF8E7',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,7 +18,7 @@ import MobileBottomBar from "./components/MobileBottomBar";
 const queryClient = new QueryClient();
 
 const AppContent = () => (
-  <div className="min-h-screen bg-green">
+  <div className="min-h-screen bg-forest-green">
     <Navbar />
     <Routes>
       <Route path="/" element={<Index />} />
