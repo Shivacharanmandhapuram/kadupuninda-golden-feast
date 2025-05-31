@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from 'react-router-dom';
 import { MapPin, Phone, Menu as MenuIcon } from 'lucide-react';
 
@@ -12,13 +13,13 @@ const MobileBottomBar = () => {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-deep-green border-t border-gold/20 z-40">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-primary-green border-t border-secondary-green/20 z-40">
       <div className="grid grid-cols-4 h-16">
         {bottomNavItems.map((item) => {
           const isActive = location.pathname === item.path;
           const content = (
             <div className={`flex flex-col items-center justify-center h-full transition-colors duration-200 ${
-              isActive ? 'text-gold' : 'text-warm-gold'
+              isActive ? 'text-light-gray' : 'text-light-gray/80'
             }`}>
               {typeof item.icon === 'string' ? (
                 <span className="text-lg mb-1">{item.icon}</span>

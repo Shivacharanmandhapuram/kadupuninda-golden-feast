@@ -57,12 +57,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom brand colors
-				'forest-green': '#1B3B24',
-				'deep-green': '#0F2419',
-				'gold': '#D4AF37',
-				'warm-gold': '#F4E4BC',
-				'cream': '#FDF8E7',
+				// Custom brand colors using your specified colors
+				'primary-green': '#286532',
+				'secondary-green': '#498845',
+				'light-gray': '#f7f7f7',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -96,7 +94,7 @@ export default {
 						transform: 'translateY(0)'
 					}
 				},
-				'gold-shimmer': {
+				'shimmer': {
 					'0%': {
 						transform: 'translateX(-100%)'
 					},
@@ -109,7 +107,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'gold-shimmer': 'gold-shimmer 2s ease-in-out infinite',
+				'shimmer': 'shimmer 2s ease-in-out infinite',
 			}
 		}
 	},
