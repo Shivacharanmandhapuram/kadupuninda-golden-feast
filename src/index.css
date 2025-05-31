@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 143 143 143; /* #f7f7f7 converted to HSL */
-    --foreground: 40 101 50; /* #286532 */
+    --background: 27 59 36; /* forest-green */
+    --foreground: 212 175 55; /* gold */
 
-    --card: 247 247 247; /* #f7f7f7 */
-    --card-foreground: 40 101 50; /* #286532 */
+    --card: 15 36 25; /* deep-green */
+    --card-foreground: 212 175 55; /* gold */
 
-    --popover: 247 247 247;
-    --popover-foreground: 40 101 50;
+    --popover: 15 36 25;
+    --popover-foreground: 212 175 55;
 
-    --primary: 40 101 50; /* #286532 */
-    --primary-foreground: 247 247 247; /* #f7f7f7 */
+    --primary: 212 175 55; /* gold */
+    --primary-foreground: 27 59 36; /* forest-green */
 
-    --secondary: 73 136 69; /* #498845 */
-    --secondary-foreground: 247 247 247;
+    --secondary: 244 228 188; /* warm-gold */
+    --secondary-foreground: 27 59 36;
 
-    --muted: 73 136 69;
-    --muted-foreground: 247 247 247;
+    --muted: 15 36 25;
+    --muted-foreground: 244 228 188;
 
-    --accent: 40 101 50;
-    --accent-foreground: 247 247 247;
+    --accent: 212 175 55;
+    --accent-foreground: 27 59 36;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 101 50;
-    --input: 73 136 69;
-    --ring: 40 101 50;
+    --border: 212 175 55;
+    --input: 15 36 25;
+    --ring: 212 175 55;
 
     --radius: 0.5rem;
   }
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-dm-sans;
+    @apply bg-forest-green text-gold font-dm-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -64,8 +64,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(40, 101, 50, 0.3), transparent);
-    animation: shimmer 2s ease-in-out infinite;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+    animation: gold-shimmer 2s ease-in-out infinite;
   }
 
   .ornamental-border {
@@ -76,7 +76,7 @@
   .ornamental-border::after {
     content: '❋';
     position: absolute;
-    color: #286532;
+    color: #D4AF37;
     font-size: 1.2rem;
     top: 50%;
     transform: translateY(-50%);
@@ -88,14 +88,5 @@
   
   .ornamental-border::after {
     right: -2rem;
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
   }
 }

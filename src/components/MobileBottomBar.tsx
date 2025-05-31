@@ -7,19 +7,19 @@ const MobileBottomBar = () => {
 
   const bottomNavItems = [
     { name: 'Menu', path: '/menu', icon: MenuIcon },
-    { name: 'Subscribe', path: '/subscription', icon: '🍽️' },
     { name: 'Location', path: '/contact', icon: MapPin },
     { name: 'Call', path: 'tel:+919876543210', icon: Phone, external: true },
+    { name: 'Franchise', path: '/franchise', icon: '🏪' },
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-primary-green border-t border-secondary-green/20 z-40">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-deep-green border-t border-gold/20 z-40">
       <div className="grid grid-cols-4 h-16">
         {bottomNavItems.map((item) => {
           const isActive = location.pathname === item.path;
           const content = (
             <div className={`flex flex-col items-center justify-center h-full transition-colors duration-200 ${
-              isActive ? 'text-light-gray' : 'text-light-gray/80'
+              isActive ? 'text-gold' : 'text-warm-gold'
             }`}>
               {typeof item.icon === 'string' ? (
                 <span className="text-lg mb-1">{item.icon}</span>
