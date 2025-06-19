@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, ChevronDown } from 'lucide-react';
@@ -12,6 +11,8 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  
+  const logoSize = 45;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -28,8 +29,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="text-2xl">🍛</div>
+          <Link to="/" className="flex items-center ">
+            <img 
+              src="/logo/logo1.png" 
+              alt="Kadupuninda Logo" 
+              className={`h-${logoSize} w-${100} object-contain`}
+              style={{ height: `${logoSize * 4}px`, width: `${120}px` }}
+            />
             <div>
               <h1 className="text-2xl font-playfair font-bold text-gold">
                 Kadupuninda
